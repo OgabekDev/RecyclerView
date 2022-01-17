@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RecyclerView 9 - RecyclerViewAsViewPager</string>
+    <string name="id">ID</string>
+    <string name="name">name</string>
+</resources>

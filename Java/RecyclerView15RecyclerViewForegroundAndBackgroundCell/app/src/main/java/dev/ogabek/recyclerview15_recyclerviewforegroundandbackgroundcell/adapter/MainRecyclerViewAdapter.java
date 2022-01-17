@@ -1,0 +1,73 @@
+package dev.ogabek.recyclerview15_recyclerviewforegroundandbackgroundcell.adapter;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.List;
+
+import dev.ogabek.recyclerview15_recyclerviewforegroundandbackgroundcell.R;
+import dev.ogabek.recyclerview15_recyclerviewforegroundandbackgroundcell.model.Member;
+
+public class MainRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+
+    Context context;
+    List<Member> members;
+
+    public MainRecyclerViewAdapter(Context context, List<Member> members) {
+        this.context = context;
+        this.members = members;
+    }
+
+    @NonNull
+    @Override
+    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_recycler_view, parent, false);
+        return new ItemViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+
+        Member member = members.get(position);
+
+        if (holder instanceof ItemViewHolder) {
+
+        }
+
+    }
+
+    @Override
+    public int getItemCount() {
+        return members.size();
+    }
+
+    public void removeItem(int position) {
+        members.remove(position);
+        notifyItemRemoved(position);
+    }
+
+    public void restoreItem(Member member, int position) {
+        members.add(position, member);
+        notifyItemInserted(position);
+    }
+
+    public class ItemViewHolder extends RecyclerView.ViewHolder {
+        public View view;
+        public RelativeLayout foregroundView, backgroundView;
+        public ItemViewHolder(View view) {
+            super(view);
+            this.view = view;
+
+            foregroundView = view.findViewById(R.id.rl_view_foreground);
+            backgroundView = view.findViewById(R.id.rl_view_background);
+
+        }
+    }
+}

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RecyclerView 5 - RecyclerViewInsideRecyclerView</string>
+    <string name="member_sub_item">Member Sub Item</string>
+</resources>

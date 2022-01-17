@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RecyclerView 4 - CustomAdapterLoadingMore</string>
+    <string name="lamborghini">Lamborghini</string>
+    <string name="_280000">$280000</string>
+</resources>

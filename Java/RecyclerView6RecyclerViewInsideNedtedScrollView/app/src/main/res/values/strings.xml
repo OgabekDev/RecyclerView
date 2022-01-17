@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">RecyclerView 6 - RecyclerViewInsideNedtedScrollView</string>
+    <string name="started_nested_scroll_view">Started Nested Scroll View</string>
+    <string name="finishing_nested_scroll_view">Finishing Nested Scroll View</string>
+    <string name="ogabekdev">OgabekDev</string>
+</resources>

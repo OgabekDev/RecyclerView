@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp"
+        android:backgroundTint="#eeeeee">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_item_ads_main_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/img_ads" />
+
+                <TextView
+                    android:id="@+id/tv_item_ads_main_text"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/googleads"
+                    android:textAllCaps="false"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#dddddd" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_item_ads_icon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_flaticon"/>
+
+                    <TextView
+                        android:id="@+id/tv_item_ads_title"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textAllCaps="false"
+                        android:textSize="15sp"
+                        android:text="@string/flaticon_freepik_slidesgo_wepic"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_item_ads_text"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textAllCaps="false"
+                    android:text="@string/ads_text"
+                    android:textStyle="normal"
+                    android:textAlignment="center"/>
+
+                <Button
+                    android:id="@+id/btn_item_ads_more_info"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#aaaaaa"
+                    android:textColor="@color/white"
+                    android:text="@string/more_info"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#dddddd" />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
